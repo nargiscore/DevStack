@@ -2,7 +2,7 @@ export default function YourStack({ stack, onRemove, onRemoveAll }) {
   const count = stack.length
 
   return (
-    <aside className="rounded-2xl border border-line bg-white p-5 lg:sticky lg:top-24 lg:self-start">
+    <aside className="rounded-2xl border border-line bg-white p-5 lg:sticky  lg:top-24 lg:mt-10 lg:self-start">
       <div className="flex items-center justify-between">
         <h2 className="font-display text-base font-semibold text-ink">Your Stack</h2>
         {count > 0 && (

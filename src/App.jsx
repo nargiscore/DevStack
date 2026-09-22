@@ -71,7 +71,13 @@ export default function App() {
             stackIds={stackIds}
             onAdd={handleAdd}
           />
-          <YourStack stack={stack} onRemove={handleRemove} onRemoveAll={handleRemoveAll} />
+          <div className="lg:mt-10">
+  <YourStack
+    stack={stack}
+    onRemove={handleRemove}
+    onRemoveAll={handleRemoveAll}
+  />
+</div>
         </div>
       </main>
 
