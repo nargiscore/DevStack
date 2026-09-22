@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-ink font-body antialiased overflow-x-hidden;
+  }
+  img {
+    @apply max-w-full;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  :focus-visible {
+    outline: 2px solid #FF3D81;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+  .btn-brand {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand-gradient px-6 py-3 font-display text-sm font-semibold text-white shadow-sm shadow-pink-200 transition-transform duration-200 hover:scale-[1.03] active:scale-[0.98];
+  }
+  .btn-outline-brand {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white px-6 py-3 font-display text-sm font-semibold text-ink transition-colors duration-200 hover:border-ink/30;
+  }
+}
+
+/* react-toastify brand skin */
+.Toastify__toast {
+  background: #15121F !important;
+  color: #F7F6FA !important;
+  border-radius: 0.9rem;
+  font-family: 'Inter', sans-serif;
+}
+.Toastify__progress-bar {
+  background: linear-gradient(95deg, #FF7A45 0%, #FF3D81 52%, #8B5CF6 100%) !important;
+}
