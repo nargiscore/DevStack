@@ -1,8 +1,8 @@
-# 🧩 Dev Stack
+#  Dev Stack
 
 **Dev Stack** is a browsing and shortlist-building app for developers. It lists 15 popular frontend, backend, database, language, styling, DevOps and tooling technologies as cards, and lets you collect the ones you're interested in into a personal "Your Stack" panel — without letting you add the same tool twice.
 
-## 🛠 Built with
+## Built with
 
 - **React 18** (functional components + hooks)
 - **Vite** — dev server and build tool
@@ -11,13 +11,13 @@
 - **JavaScript (ES6+)**
 - **JSON** — technology data, loaded at runtime via `fetch`
 
-## ✨ Features
+##  Features
 
 1. **Live technology catalog** — 15 technologies loaded from `technologies.json` (not hardcoded), rendered as a responsive card grid (1 column on mobile, 2 on tablet, 3 on desktop), each showing an icon, badge, category, difficulty and star rating.
 2. **One-click stack building** — clicking "Add to Stack" moves a technology into the "Your Stack" sidebar, disables its card button, and shows a toast. Trying to add it again is blocked with a warning toast instead of a duplicate.
 3. **Full stack management** — remove a single item with its ✕ button or clear everything at once with "Remove All," each backed by its own toast, with a clear empty state when nothing is selected yet.
 
-## 🚀 Getting started
+##  Getting started
 
 ```bash
 npm install
@@ -35,7 +35,7 @@ npm run preview
 
 ## 📁 Project structure
 
-```
+
 dev-stack/
 ├── public/
 │   └── technologies.json     # technology data, fetched at runtime
@@ -52,11 +52,11 @@ dev-stack/
 │   ├── main.jsx
 │   └── index.css
 └── index.html
-```
+
 
 ---
 
-## 📚 React questions
+##  React questions
 
 **What is JSX, and why is it used in React?**
 JSX is a syntax extension that lets you write HTML-like markup directly inside JavaScript. Under the hood it compiles down to `React.createElement()` calls. It's used because it makes component structure easy to read and write — you can see what the UI will look like right next to the logic that drives it, instead of building elements by hand in plain JS.
